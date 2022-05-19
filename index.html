@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Weather App by Ashutosh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p id="credits">Beta Release Version : 1.0 <br>Credits : Ashutosh</br></p>
+    <!-- contianer -->
+
+    <div class="container">
+      <h3>
+        <p id="arrow-back"><i class="bx bx-arrow-back"></i></p>
+        Weather App
+      </h3>
+
+      <!-- contain -->
+      <div class="content active">
+        <label for="location">
+          <input
+            type="text"
+            id="location-input"
+            placeholder="Enter City Name"
+            autofocus
+          />
+        </label>
+        <div class="or"></div>
+        <button id="locButton">Get Device Location</button>
+      </div>
+
+      <!-- Result Section -->
+
+      <div class="result">
+        <img id="images" src="icons/clear.svg" alt="Weathericon" />
+        <div class="temp">
+          <span class="numb">Fetching..</span>
+          <span class="deg">°C</span>
+        </div>
+        <p class="feels">Hazy Sunshine</p>
+        <p class="location">
+          <i class="bx bxs-map"></i><span id="location">...</span>
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

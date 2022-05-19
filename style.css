@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  font-size: large;
+  transition: all 1s;
+}
+body {
+  background-color: rgba(0, 162, 255, 0.938);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+#credits {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  background-color: rgb(255, 255, 255);
+  /* height: 12rem; */
+  width: 18rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+h3 {
+  color: rgba(0, 162, 255, 0.938);
+  border-bottom: 1px solid rgba(0, 162, 255, 0.938);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+#arrow-back {
+  display: none;
+  color: rgba(0, 162, 255, 0.938);
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+.content {
+  display: none;
+  text-align: center;
+  color: rgba(0, 162, 255, 0.938);
+}
+input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  color: rgb(201, 201, 201);
+  padding: 0.3rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+input:focus {
+  border: 2px solid rgba(0, 162, 255, 0.938);
+  color: rgba(0, 0, 0, 0.938);
+}
+
+.or {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.or::before {
+  content: "or";
+  color: #b3b3b3;
+  padding: 0 15px;
+  background: #fff;
+}
+button {
+  padding: 0.5rem;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 162, 255, 0.938);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* result part */
+.result {
+  display: none;
+  text-align: center;
+  margin: 1rem;
+  color: black;
+}
+
+.result .temp span {
+  font-size: 3rem;
+}
+.result img {
+  height: 5rem;
+}
+.location {
+  margin-top: 1rem;
+}
+
+.active {
+  display: block !important;
+}
