@@ -45,11 +45,15 @@ let requestApi = async (city) => {
   tempresult.innerHTML = city.toFixed(2);
   feelsLike.textContent = response.weather[0].description;
   cityName.textContent = `${response.name}, ${response.sys.country}`;
-  codeid = response.weather[0].id;
+  let codeid = response.weather[0].id;
   dynamicImg(codeid);
 };
 
 //geoLocation................................................
+
+locButton.addEventListener("click", () => {
+  return navigator.geolocation.getCurrentPosition(accessedLoc, errorInLoc);
+});
 
 let accessedLoc = async (position) => {
   let lat = position.coords.latitude;
@@ -58,27 +62,32 @@ let accessedLoc = async (position) => {
   api = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ce6df84c4c96611f55a9124eb7d907f1`
   );
-  let response = await api.json();
   content.classList.remove("active");
   result.classList.add("active");
   arrow.classList.add("active");
 
+  let response = await api.json();
   let city = response.main.temp - 273.15;
   tempresult.innerHTML = city.toFixed(2);
   feelsLike.textContent = response.weather[0].description;
   cityName.textContent = `${response.name}, ${response.sys.country}`;
   console.log(city);
-  codeid = response.weather[0].id;
+  let codeid = response.weather[0].id;
   dynamicImg(codeid);
 };
 
 let errorInLoc = (error) => {
   console.error(error);
+  result.classList.add("active");
+  result.innerHTML = "Location Permisson Denide";
+  result.style.color = "red";
+  result.style.backgroundColor = "rgb(204, 197, 197)";
+  result.style.padding = ".6rem";
+  result.style.borderRadius = "10px";
+  setTimeout(() => {
+    window.location.reload();
+  }, 1000);
 };
-
-locButton.addEventListener("click", () => {
-  return navigator.geolocation.getCurrentPosition(accessedLoc, errorInLoc);
-});
 
 function dynamicImg(codeid) {
   if (codeid == 721) {
