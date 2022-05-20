@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   font-size: large;
-  transition: all 1s;
+  transition: all .5s;
 }
 body {
   background-color: rgba(0, 162, 255, 0.938);
