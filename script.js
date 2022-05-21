@@ -19,6 +19,7 @@ darktheme.addEventListener("click", () => {
   myBody.classList.add("gray");
   container.classList.add("black");
   content.classList.add("black");
+  result.classList.add("black");
   darktheme.classList.add("disp");
   darktheme2.classList.remove("disp");
   input.classList.add("gray");
@@ -29,6 +30,7 @@ darktheme2.addEventListener("click", () => {
   container.classList.remove("black");
   content.classList.remove("black");
   darktheme2.classList.add("disp");
+  result.classList.remove("black");
   darktheme.classList.remove("disp");
   input.classList.remove("gray");
   or.classList.remove("gray");
