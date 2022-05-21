@@ -29,7 +29,7 @@ aside img {
 }
 .black {
   background-color: rgb(0, 0, 0) !important;
-  color: rgb(0, 0, 0) !important;
+  color: rgb(225, 225,225) !important;
 }
 .disp {
   display: none;
