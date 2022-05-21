@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="myBody"> 
     <p id="credits">Beta Release Version : 1.0 <br>Credits : Ashutosh</br></p>
     <!-- contianer -->
 
@@ -42,7 +42,7 @@
       <!-- Result Section -->
 
       <div class="result">
-        <img id="images" src="icons/clear.svg" alt="Weathericon" />
+        <img id="images" src="" alt="Weathericon" />
         <div class="temp">
           <span class="numb">Fetching..</span>
           <span class="deg">°C</span>
@@ -53,6 +53,18 @@
         </p>
       </div>
     </div>
+    
+    
+    <!-- Dark Mode -->
+
+
+    <aside class="aside">
+        <div class="mode">
+        <img src="icons/daylight.png" alt="daylight" id="day">
+        <img src="icons/moon.png" alt="night" id="night"
+        class="disp">
+    </div>
+    </aside>
 
     <script type="module" src="script.js"></script>
   </body>
