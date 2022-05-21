@@ -26,6 +26,7 @@ aside img {
   position: absolute;
   top: 0;
   right: 0;
+   animation: Zoom 0.8s ease;
 }
 .black {
   background-color: rgb(0, 0, 0) !important;
@@ -125,6 +126,17 @@ button {
   text-align: center;
   margin: 1rem;
   color: black;
+}
+@keyframes Zoom {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 .result .temp span {
