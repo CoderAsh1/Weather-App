@@ -26,7 +26,9 @@ aside img {
   position: absolute;
   top: 0;
   right: 0;
-   animation: Zoom 0.8s ease;
+  animation: Zoom 0.8s ease;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgb(31, 97, 196);
 }
 .black {
   background-color: rgb(0, 0, 0) !important;
@@ -130,6 +132,9 @@ button {
 @keyframes Zoom {
   0% {
     scale: 1;
+  }
+  25% {
+    scale: 0.5;
   }
   50% {
     scale: 1.5;
