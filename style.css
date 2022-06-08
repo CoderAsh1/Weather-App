@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+
+@font-face {
+  font-family: CascadiaMono;
+  src: url("/CascadiaMono.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: CascadiaMono;
   font-size: large;
   transition: all 0.5s;
 }
+
 body {
   background-color: rgba(0, 162, 255, 0.938);
   display: flex;
